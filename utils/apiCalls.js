@@ -32,7 +32,7 @@ const callApi = (options, payload) => {
 }
 
 exports.fetchAccessToken = async (endpoint, httpMethod, digest, reqDate, signature, payload) => {
-    const keyId = "SN=499602D2"; // Serial number of the downloaded certificate in hexadecimal code
+    const keyId = "SN=5E4299BE"; // Serial number of the downloaded certificate in hexadecimal code
     
     const cert = fs.readFileSync(path.resolve(__dirname, `${certPath}/example_eidas_client_signing.cer`), "utf-8");
     // Trim newlines
